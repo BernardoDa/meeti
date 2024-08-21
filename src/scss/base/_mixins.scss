@@ -32,7 +32,7 @@
     border: none;
     transition-property: background-color;
     transition-duration: .3s;
-    
+    border-radius: 1.6rem;
 
     @include tablet {
         width: auto;
@@ -46,4 +46,10 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin heading {
+    text-align: center;
+    margin: 0;
+    color: v.$gris;
 }
